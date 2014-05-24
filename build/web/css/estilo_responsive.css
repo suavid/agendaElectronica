@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-may-2014, 15:37:04
+    Author     : Pochii
+*/
+
+@media (max-width: 900px){
+  body{background-color: #fff;}
+  #contenido{width: 95%; height: 100%;}  
+  #menu li { list-style: none; float: left; margin: 0;}
+} 
