@@ -20,7 +20,7 @@ h3 { color: #9C0000; background: #D0D4D4; padding: 3px 10px; margin: 0 0 15px; }
 	#menu { margin: 0 0 50px;}
 		#menu li { list-style: none; float: left; margin: 0;}
 		#menu li a {cursor: pointer; padding: 5px 39px; line-height: 25px; background: #D0D4D4; margin: 0; color: #17404f; }
-		#menu li a.current { background: #2c8dc1; color: #ffffff; margin: 0;}	
+		#menu li a.current { background: #2A4452; color: #ffffff; margin: 0;}	
 		#menu li a:hover { background: #8acfd9; color: #02404d; margin: 0;}
 .unico{ font-size: .9em;  width: 860px; float: left; margin: 0 30px 10px 10px;}
 .columna1 { font-size: .9em;  float: left; width: 410px; margin: 0 30px 10px 10px; }
@@ -60,3 +60,17 @@ h3 { color: #9C0000; background: #D0D4D4; padding: 3px 10px; margin: 0 0 15px; }
 }
 .btn-principal {color: #ffffff;background-color: #428bca;border-color: #357ebd;}
 .btn-principal:hover{color: #E4FFD3; background-color: #8acfd9;}
+
+/* Agregado*/
+#userName, #menu {
+    float: right;
+}
+
+#userName {
+    margin-left: 100px;
+    padding-right: 10px;
+}
+
+#moduleTitle {
+    text-align: center;
+}

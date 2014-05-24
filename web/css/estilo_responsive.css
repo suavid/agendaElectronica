@@ -10,6 +10,10 @@ and open the template in the editor.
 
 @media (max-width: 900px){
   body{background-color: #fff;}
-  #contenido{width: 95%; height: 100%;}  
-  #menu li { list-style: none; float: left; margin: 0;}
+  #contenido{width: 95%; height: 100%;}
+  #menu {display: block;width:85%;float:none;}
+  #menu li { list-style: none; display: block; margin: 0; float: none; }
+  #menu li a{ width: 100%; display: block; }
+  #userName { float: none; margin-left: 5px; padding: 15px;}
+  #moduleTitle{ width: 100%; }
 } 

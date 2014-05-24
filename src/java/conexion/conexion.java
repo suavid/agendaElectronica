@@ -24,7 +24,7 @@ public class conexion {
     {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/agenda","root","123456");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/agenda","root","");
             s = con.createStatement();
                         
         } catch (ClassNotFoundException ex) {

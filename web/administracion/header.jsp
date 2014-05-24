@@ -25,7 +25,8 @@
       {
       }
       if (idUsuario.equals(null))
-      {response.sendRedirect(ruta + "/login.jsp?erno=10");
+      {
+          response.sendRedirect(ruta + "/login.jsp?erno=10");
       }
       if (tipoUsuario == "")
       { }
@@ -56,15 +57,10 @@
 		<div id="header">
 			<div id="logo">
 			</div>	
-			<!--<div id="search">				
-				<div id="searchform" >
-					<form method="post" action="" >
-						<p><input class="searchfield" name="search_query" id="keywords" value="B&uacute;squeda..." type="text" />
-						<input class="searchbutton" name="submit" value=" Buscar " type="submit" /></p>
-					</form>
-				</div>
-			</div> !--->
 		</div>
+                
+            <div id="userName"><b>Bienvenido:  </b><font color="red"><%= nombreUsuario%></font></div>
+            
 		<ul id="menu">
 			<li><a class="current" href="<%=ruta%>/index.jsp">Mi cuenta</a></li><!-- Actual Seleccionado -->
 			<li><a href="<%=ruta%>/contactos/MostrarContactos.jsp">Contactos</a></li>
@@ -80,7 +76,6 @@
                        
 			
                         <li><a href="<%=ruta%>/administracion/CerrarSession.jsp">Cerrar Sesi&oacute;n</a></li>
-                        <li style="margin-left: 84px;"  ><b>Bienvenido:  </b><font color="red"><%= nombreUsuario%></font></li>
 		</ul>
                 
             <div> <!---INICIO DEL CONTENT--->
