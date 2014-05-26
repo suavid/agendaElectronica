@@ -7,13 +7,12 @@
 <head>
 	<title>Agenda electr&oacute;nica UDB</title>
 	<link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_login_responsive.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
 </head>
 <body>
 	<div id="contenido">	
-		<div id="header">
-			<div id="logo">
-			</div>	
+		<div id="headerAlt" >
+                    <img src="img/header.jpg" alt="Banner" id="banner"/>	
 		</div>
             <div> <!---INICIO DEL CONTENT--->
           <div class="center-content">
@@ -42,9 +41,8 @@
                   }                  
          %>
                     <h1>Ingreso al sistema</h1>
-
                     <form action="/agendaElectronica/procesarLogueo" method="post">
-                    <table>
+                        <table style="margin: 0 auto;">
                         <tr>
                             <td>Usuario:</td>
                             <td><input type="text" name="usuario" required /> </td>
