@@ -54,8 +54,7 @@
 <body>
 	<div id="contenido">	
 		<div id="header">
-			<div id="logo">
-			</div>	
+                    <img src="../img/header.jpg" alt="baner" />	
 		</div>
                 
             <div id="userName"><b>Bienvenido:  </b><span class="red"><%= nombreUsuario%></span></div>
