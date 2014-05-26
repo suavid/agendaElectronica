@@ -13,7 +13,7 @@
     <h2>.:: Mis Contactos::. </h2>    
 </center>
 <br /><br />
-<input  style="margin-left: 84px;" type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Contactos"  onkeyup="buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda');" />
+<input type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Contactos"  onkeyup="buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda');" />
 <br /><br />
     <center>
         <div id="busqueda">

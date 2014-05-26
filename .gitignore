@@ -1,6 +1,6 @@
-/dist/
 /build/
-
+/web/META-INF/context.xml
+/src/java/conexion/conexion.java
 *.class
 
 # Mobile Tools for Java (J2ME)
