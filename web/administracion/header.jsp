@@ -49,6 +49,7 @@
 	<title>Agenda electr&oacute;nica UDB</title>
 	<link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="<%=ruta%>/css/tutorial.css" media="all" />
         <meta charset="UTF-8">
 </head>
 <body>

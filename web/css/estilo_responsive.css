@@ -13,13 +13,13 @@
     #userName { margin-left: 5px; padding: 10px;}
     #menu, #userName, #menu li {float: none;}
     #header {display:none;}
-    #optDrawer{display:block; float:left; maring:0px;}
+    #optDrawer{display:block; float:left; margin:0px;}
     #optDrawer:hover{cursor: pointer;}
     #menu{margin:0;display:none;}
     #userName{box-shadow: 1px 1px 3px #939393; margin:0; margin-bottom: 0px; background: linear-gradient(#F3F3F3,#E3E3E3);}
     #menu li { list-style: none; margin: 0; width: 100%; }
 }
-@media (max-width: 450px){
+@media (max-width: 450px){  
    .table-responsive thead,.table-responsive tr,.table-responsive th, .table-responsive tbody, .table-responsive td{ display: block; padding: 0px; border: none !important; }
    .table-responsive table{ display: table; margin: 0px; border: none; }
    .table-responsive thead,.table-responsive th { display: none; }
