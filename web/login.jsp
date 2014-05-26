@@ -16,7 +16,7 @@
 			</div>	
 		</div>
             <div> <!---INICIO DEL CONTENT--->
-                <center>
+          <div class="center-content">
                      <!--Alertas !--->
             <%
                   if (request.getParameter("erno") != null)
@@ -66,6 +66,6 @@
                    </table>
                         <br /><br />
                   </form>
-                </center>
+          </div>
     </body>
 </html>
