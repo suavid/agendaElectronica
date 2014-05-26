@@ -17,7 +17,7 @@
 
 <h2 id='moduleTitle'>.:: Mis Contactos::. </h2>    
 <input type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Contactos"  onkeyup="buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda');" />
-        <div id="busqueda" class="center-content">
+        <div id="busqueda" class="center-content table-responsive">
         </div>
         <br />
     <a href="AgregarContacto.jsp" class="btn btn-principal">Agregar nuevo</a>
