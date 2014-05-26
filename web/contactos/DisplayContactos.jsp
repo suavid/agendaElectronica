@@ -35,8 +35,6 @@
                 <display:column title="Telefono" property="TelefonoMovil" />
                 <display:column title="Email" property="email" />
                 
-                     
-                
                  <display:column  value="Modificar"
                                  url="/contactos/ModificarContacto.jsp" paramId="id"
                                  paramProperty="idContacto"  style="text-align:center;"/>

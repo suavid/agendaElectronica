@@ -4,28 +4,28 @@
     Author     : jorge
 --%>
 
-<script type="text/javascript" src="../js/selectAjax.js"></script>
 <%@include  file="../administracion/header.jsp" %>
+<%@include  file="../administracion/valTipoUsuario.jsp" %>
+<script type="text/javascript" src="../js/selectAjax.js"></script>
+
+<script>
+    (function(){
+        window.onload  = function() { buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda'); };
+    })();
+</script>
 <div class="unico">
 
-<body onload="buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda')">
-<center>
-    <h2>.:: Mis Contactos::. </h2>    
-</center>
-<br /><br />
+<h2 id='moduleTitle'>.:: Mis Contactos::. </h2>    
 <input type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Contactos"  onkeyup="buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda');" />
-<br /><br />
-    <center>
-        <div id="busqueda">
+        <div id="busqueda" class="center-content">
         </div>
-    </center>
-    <br />
+        <br />
     <a href="AgregarContacto.jsp" class="btn btn-principal">Agregar nuevo</a>
 
 </div> 
  
 <div style="clear: both;"></div>
-<script language="javascript">
+<script>
     function confirmar(url,id){
         if(confirm("Eliminar este contacto?"))
             location.href = url + "?idContacto=" + id;
