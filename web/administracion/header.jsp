@@ -52,12 +52,40 @@
         <meta charset="UTF-8">
 </head>
 <body>
+        <script>
+    (function(){
+        window.onload  = function() {  
+            document.getElementById("optDrawer").addEventListener("click", displayMenu ,false);
+        };
+    })();
+    
+    function displayMenu(){
+        var current = document.getElementById("menu").style.display;
+        switch(current){
+            case 'none':
+                document.getElementById("menu").style.display = "block";
+                break;
+            case 'block':
+                document.getElementById("menu").style.display = "none";
+                break;
+            default:
+                document.getElementById("menu").style.display = "block";
+                break;
+        }
+        
+    }
+</script>
 	<div id="contenido">	
 		<div id="header">
-                    <img src="../img/header.jpg" alt="baner" />	
 		</div>
                 
-            <div id="userName"><b>Bienvenido:  </b><span class="red"><%= nombreUsuario%></span></div>
+            <div id="userName">
+               
+                <img src="../img/ic_drawer.png" alt="MENU" id="optDrawer"/>
+             
+                <b>Bienvenido:  </b><span class="red"><%= nombreUsuario%></span>
+                <div style="clear:both;"></div>
+            </div>
             
 		<ul id="menu">
 			<li><a class="current" href="<%=ruta%>/index.jsp">Mi cuenta</a></li><!-- Actual Seleccionado -->

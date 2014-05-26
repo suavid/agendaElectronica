@@ -10,6 +10,7 @@
 <script>
     (function(){
         window.onload  = function() { buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda'); };
+        document.getElementById("optDrawer").addEventListener("click", displayMenu ,false);
     })();
 </script>
 <div class="unico">

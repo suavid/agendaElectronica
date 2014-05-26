@@ -38,6 +38,7 @@
                     <td>
                         <label>${usr.tipoUsuario}</label>
                     </td>
+            </tr>
         </table>
     </c:forEach>
     <br />

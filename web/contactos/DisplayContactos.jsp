@@ -29,7 +29,7 @@
                 idUsuario=<%= SessionActual.getAttribute("idUsuario") %>
             </sql:query>
 
-            <display:table id="usuarios" name="${q1.rows}" pagesize="15">
+            <display:table id="contactos" class="table-responsive" name="${q1.rows}" pagesize="15">
                 <display:column title="Nombre" property="nombres" />
                 <display:column title="Apellido" property="apellidos" />
                 <display:column title="Telefono" property="TelefonoMovil" />

@@ -9,26 +9,31 @@
     input[type="text"]{ padding:5px; width: 93%;}
     #footer, #prefooter { display:none; }
 } 
-@media (max-width: 580px) {
-    #userName { margin-left: 5px; padding: 15px;}
+@media (max-width: 595px) {
+    #userName { margin-left: 5px; padding: 10px;}
     #menu, #userName, #menu li {float: none;}
+    #header {display:none;}
+    #optDrawer{display:block; float:left; maring:0px;}
+    #optDrawer:hover{cursor: pointer;}
+    #menu{margin:0;display:none;}
+    #userName{box-shadow: 1px 1px 3px #939393; margin:0; margin-bottom: 0px; background: linear-gradient(#F3F3F3,#E3E3E3);}
     #menu li { list-style: none; margin: 0; width: 100%; }
 }
 @media (max-width: 450px){
-    #usuarios thead, #usuarios tr, #usuarios th, #usuarios tbody, #usuarios td{ display: block; padding: 0px; border: none !important; }
-    #usuarios table{ display: table; margin: 0px; border: none; }
-    #usuarios thead, #usuarios th { display: none; }
-    #usuarios td{ width: 96%; border: solid 1px #000;}
-   #usuarios td, #usuarios td:before{ float: left; }
-   #usuarios td:before{ width: 50%; display:block; margin-right: 12px; white-space: nowrap; }
+   .table-responsive thead,.table-responsive tr,.table-responsive th, .table-responsive tbody, .table-responsive td{ display: block; padding: 0px; border: none !important; }
+   .table-responsive table{ display: table; margin: 0px; border: none; }
+   .table-responsive thead,.table-responsive th { display: none; }
+   .table-responsive td{ width: 96%; border: solid 1px #000;}
+   .table-responsive td,.table-responsive td:before{ float: left; }
+   .table-responsive td:before{ width: 50%; display:block; margin-right: 12px; white-space: nowrap; }
    #usuarios td:nth-of-type(1):before { content: "Nombres"; background-color: #66cccc;}
    #usuarios td:nth-of-type(2):before { content: "Apellidos"; background-color: #66cccc; }
    #usuarios td:nth-of-type(3):before { content: "Usuario"; background-color: #66cccc; }
    #usuarios td:nth-of-type(4):before { content: "Tipo usuario"; background-color: #66cccc; }
 
-   .table-responsive td:nth-of-type(1):before { content: "Nombres"; background-color: #66cccc;}
-   .table-responsive td:nth-of-type(2):before { content: "Apellidos"; background-color: #66cccc; }
-   .table-responsive td:nth-of-type(3):before { content: "Telefono"; background-color: #66cccc; }  
-   .table-responsive td:nth-of-type(4):before { content: "E-mail"; background-color: #66cccc; }
+   #contactos td:nth-of-type(1):before { content: "Nombres"; background-color: #66cccc;}
+   #contactos td:nth-of-type(2):before { content: "Apellidos"; background-color: #66cccc; }
+   #contactos td:nth-of-type(3):before { content: "Telefono"; background-color: #66cccc; }  
+   #contactos td:nth-of-type(4):before { content: "E-mail"; background-color: #66cccc; }
 }
-@media (max-width: 290px){ td, td:before {float: none; width: 96%; text-align: center;} #menu{font-size: 0.8em;}}
+@media (max-width: 310px){ td, td:before {float: none; width: 96%; text-align: center;} #menu{font-size: 0.8em;}}
