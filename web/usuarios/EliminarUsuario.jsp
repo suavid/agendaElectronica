@@ -22,7 +22,7 @@
     {
 %>
 
-    <center>
+    <div class="center-content top-mar">
     <h2>.:: Eliminar Usuario ::.</h2>
         <form name="eliminarForm" id="eliminarForm" action="/agendaElectronica/eliminarUsuario" method="post">
          <table>
@@ -85,7 +85,7 @@
                 }
         }
 </script>
-</center>
+</div>
 </div>   
 <div style="clear: both;"></div>
 <%@include  file="../administracion/footer.jsp" %>

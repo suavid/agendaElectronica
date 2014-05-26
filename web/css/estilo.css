@@ -63,10 +63,14 @@ h3 { color: #9C0000; background: #D0D4D4; padding: 3px 10px; margin: 0 0 15px; }
 .btn-principal:hover{color: #E4FFD3; background-color: #8acfd9;}
 
 /* Agregado*/
-#userName, #menu {
+#userName{
     float: right;
 }
-
+#userName {  margin-bottom: 25px;}
+#menu{
+    margin-top: 5px;
+    float: left;
+} 
 #userName {
     margin-left: 100px;
     padding-right: 10px;
@@ -84,6 +88,10 @@ h3 { color: #9C0000; background: #D0D4D4; padding: 3px 10px; margin: 0 0 15px; }
     left: 0;
     right: 0;
     text-align: center;
+}
+
+.top-mar{
+    margin-top: 10px;
 }
 
 #usuarios, #contactos {

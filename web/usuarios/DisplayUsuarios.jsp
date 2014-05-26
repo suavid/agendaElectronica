@@ -54,7 +54,7 @@
                  paramProperty="idUsuario"   style="text-align:center;"/>
                     <display:column  value="Eliminar"
                                      url="/usuarios/EliminarUsuario.jsp" paramId="id"
-                                     paramProperty="idUsuario"  style="text-align:center;"/>
+                                     paramProperty="idUsuario" style="text-align:center;"/>
 
                 </display:table> 
                 

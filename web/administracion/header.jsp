@@ -47,10 +47,10 @@
 <html>
 <head>
 	<title>Agenda electr&oacute;nica UDB</title>
-	<link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<%=ruta%>/css/tutorial.css" media="all" />
         <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<%=ruta%>/css/tutorial.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
 </head>
 <body>
         <script>
@@ -82,7 +82,7 @@
                 
             <div id="userName">
                
-                <img src="../img/ic_drawer.png" alt="MENU" id="optDrawer"/>
+                <img src="<%=ruta%>/img/ic_drawer.png" alt="MENU" id="optDrawer"/>
              
                 <b>Bienvenido:  </b><span class="red"><%= nombreUsuario%></span>
                 <div style="clear:both;"></div>

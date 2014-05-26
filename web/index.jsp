@@ -10,10 +10,10 @@
     <sql:query dataSource="jdbc/mysql" var="q1">
         SELECT * FROM usuarios WHERE idUsuario = <%=idUsuario%>
     </sql:query>
- <center>        
+ <div class="center-content top-mar">        
     <h2>Mis datos</h2>
     <c:forEach var="usr" items="${q1.rows}">
-        <table>
+        <table style="margin: 0 auto;">
              <tr>
                     <td>Nombre:</td>
                     <td><label>${usr.nombres}</label> </td>
@@ -43,7 +43,7 @@
     </c:forEach>
     <br />
     <a href="usuarios/ModificarUsuario.jsp?type=p&idUsuario=<%=idUsuario%>" class="btn btn-principal">Modificar mis datos</a>
- </center>	
+ </div>	
 </div>
 <div style="clear: both;"></div>
 <%@include  file="administracion/footer.jsp" %>

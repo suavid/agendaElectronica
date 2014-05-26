@@ -16,7 +16,7 @@
 <%@include  file="../administracion/header.jsp" %>
 <%@include  file="../administracion/valTipoUsuario.jsp" %>
 <div class="unico">
-    <center>
+    <div class="center-content top-mar">
     <h2>.:: Agregar Nuevo Usuario ::.</h2>
   <form name="agregarUsuario" action="/agendaElectronica/agregarUsuario" method="post" >
            
@@ -81,7 +81,7 @@
             </tr>
 
        </table>  
-</center>
+</div>
   </form>            
  </body>
  

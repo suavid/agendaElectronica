@@ -28,7 +28,7 @@
 
     
 <div class="unico">
-    <center>
+    <div class="center-content top-mar">
     <h2>.:: Modificar Usuarios ::.</h2>
   <form name="modificarUsuario" action="/agendaElectronica/modificarUsuario" method="post" >
      <table>
@@ -86,7 +86,7 @@
             </tr>
             </c:forEach>
        </table>  
-</center>
+</div>
   </form>            
  </body>
  
