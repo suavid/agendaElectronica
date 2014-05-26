@@ -101,7 +101,7 @@
                         }
                         %>
                        
-			
+			<li><a href="<%=ruta%>/tuto/tutorial.jsp">Ayuda</a></li>
                         <li><a href="<%=ruta%>/administracion/CerrarSession.jsp">Cerrar Sesi&oacute;n</a></li>
 		</ul>
                 
