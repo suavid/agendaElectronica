@@ -43,14 +43,13 @@
   { response.sendRedirect(ruta +"/login.jsp?erno=10");
  }  
 %>
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<title>Agenda electr&oacute;nica UDB</title>
 	<link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
+        <meta charset="UTF-8">
 </head>
 <body>
 	<div id="contenido">	
@@ -59,7 +58,7 @@
 			</div>	
 		</div>
                 
-            <div id="userName"><b>Bienvenido:  </b><font color="red"><%= nombreUsuario%></font></div>
+            <div id="userName"><b>Bienvenido:  </b><span class="red"><%= nombreUsuario%></span></div>
             
 		<ul id="menu">
 			<li><a class="current" href="<%=ruta%>/index.jsp">Mi cuenta</a></li><!-- Actual Seleccionado -->
@@ -78,8 +77,7 @@
                         <li><a href="<%=ruta%>/administracion/CerrarSession.jsp">Cerrar Sesi&oacute;n</a></li>
 		</ul>
                 
-            <div> <!---INICIO DEL CONTENT--->
-            <!--Alertas !--->
+                <div id="mainFrame"> 
             <%
                   if (request.getParameter("erno") != null)
                   {

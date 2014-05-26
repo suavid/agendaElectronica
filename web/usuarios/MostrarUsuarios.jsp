@@ -7,16 +7,16 @@
 <%@include  file="../administracion/valTipoUsuario.jsp" %>
 
 <script type="text/javascript" src="../js/selectAjax.js"></script>
-<body onload="buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda')">
+<script>
+    (function(){
+        window.onload  = function() { buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda'); };
+    })();
+</script>
 <div class="unico">
-    <h2 id="moduleTitle">.:: Usuarios en el sistema ::. </h2>    
-    <br /><br />
-    <input  style="margin-left: 84px;" type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Usuarios"  onkeyup="buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda');" />
-    <br /><br />
-    <center>
-        <div id="busqueda">
-        </div>
-   </center>
+    <h2 id="moduleTitle">Usuarios en el sistema</h2>    
+    <input type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Usuarios"  onkeyup="buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda');" />
+   <div id="busqueda" class="center-content">
+   </div>
    <br />
    <a href="AgregarUsuario.jsp" class="btn btn-principal">Agregar nuevo</a>
 </div> 

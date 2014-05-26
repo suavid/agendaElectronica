@@ -3,6 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/web/login.jsp</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/web/css/displaytag.css</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/web/administracion/header.jsp</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/src/java/action/procesarLogueo.java</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/web/usuarios/MostrarUsuarios.jsp</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/src/java/conexion/conexion.java</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/web/administracion/footer.jsp</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/web/css/estilo.css</file>
+            <file>file:/C:/Users/Parras/Documents/NetBeansProjects/agendaElectronica/web/css/estilo_responsive.css</file>
+        </group>
     </open-files>
 </project-private>

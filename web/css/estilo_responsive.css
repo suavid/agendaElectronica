@@ -1,19 +1,28 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 19-may-2014, 15:37:04
-    Author     : Pochii
-*/
-
 @media (max-width: 900px){
-  body{background-color: #fff;}
-  #contenido{width: 95%; height: 100%;}
-  #menu {display: block;width:85%;float:none;}
-  #menu li { list-style: none; display: block; margin: 0; float: none; }
-  #menu li a{ width: 100%; display: block; }
-  #userName { float: none; margin-left: 5px; padding: 15px;}
-  #moduleTitle{ width: 100%; }
+    body, html, #contenido, .unico, #footer, #prefooter, #mainFrame, #header { width: 100%; margin: 0px; padding: 0px; }
+    body{ background-color: #fff; }
+    #moduleTitle{ width: 100%; margin-top: 25px;}
+    #userName { float: none; margin-bottom: 25px;}
+    #menu {float: none;}
+    body{ text-align: center; }
+    input[type="text"]{ padding:5px; width: 93%;}
+    #footer, #prefooter { display:none; }
 } 
+@media (max-width: 580px) {
+    #userName { margin-left: 5px; padding: 15px;}
+    #menu, #userName, #menu li {float: none;}
+    #menu li { list-style: none; margin: 0; width: 100%; }
+}
+@media (max-width: 450px){
+    thead, tr, th, tbody, td{ display: block; padding: 0px; border: none !important; }
+    table{ display: table; margin: 0px; border: none; }
+    thead, th { display: none; }
+    td{ width: 96%; border: solid 1px #000;}
+    td, td:before{ float: left; }
+    td:before{ width: 50%; display:block; margin-right: 12px; white-space: nowrap; }
+    td:nth-of-type(1):before { content: "Nombres"; background-color: #CEE3F6;}
+    td:nth-of-type(2):before { content: "Apellidos"; background-color: #CEE3F6; }
+    td:nth-of-type(3):before { content: "Usuario"; background-color: #CEE3F6; }
+    td:nth-of-type(4):before { content: "Tipo usuario"; background-color: #CEE3F6; }
+}
+@media (max-width: 290px){ td, td:before {float: none; width: 96%; text-align: center;} }
