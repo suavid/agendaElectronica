@@ -2,21 +2,21 @@
     String ruta = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
 %>
 <%@page session="true" %>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Agenda electr&oacute;nica UDB</title>
-	<link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Agenda electr&oacute;nica UDB</title>
+    <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_login_responsive.css" media="all" />
 </head>
 <body>
-	<div id="contenido">	
-		<div id="headerAlt" >
-                    <img src="img/header.jpg" alt="Banner" id="banner"/>	
-		</div>
-            <div> <!---INICIO DEL CONTENT--->
-          <div class="center-content">
-                     <!--Alertas !--->
+    <div id="contenido">	
+	<div id="header" ></div>
+        <div>
+            <div class="center-content">
             <%
                   if (request.getParameter("erno") != null)
                   {
@@ -40,30 +40,29 @@
                       
                   }                  
          %>
-                    <h1>Ingreso al sistema</h1>
-                    <form action="/agendaElectronica/procesarLogueo" method="post">
-                        <table style="margin: 0 auto;">
-                        <tr>
-                            <td>Usuario:</td>
-                            <td><input type="text" name="usuario" required /> </td>
-                        </tr>
-                        <tr>
-                            <td>Contrase&ntilde;a:</td>
-                            <td><input type="password" name="pass" required /> </td>
-                        </tr>
+                <h1>Ingreso al sistema</h1>
+                <form action="/agendaElectronica/procesarLogueo" method="post">
+                <table class="center-simple">
+                    <tr>
+                        <td>Usuario:</td>
+                        <td><input type="text" name="usuario"/> </td>
+                    </tr>
+                    <tr>
+                        <td>Contrase&ntilde;a:</td>
+                        <td><input type="password" name="pass"/> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <br/>
+                        <input type="reset" class="btn btn-principal" value="Limpiar" />
+                        <input type="submit" class="btn btn-principal" value="Ingresar" />
+                        </td>
 
-                        <tr>
-                            <td colspan="2">
-                                <center><br />
-                                    <input type="Reset" class="btn btn-principal" value="Limpiar" />
-                                    <input type="Submit" class="btn btn-principal" value="Ingresar" />
-                                </center>
-                            </td>
-
-                        </tr>
-                   </table>
-                        <br /><br />
-                  </form>
+                    </tr>
+                </table>
+                </form>
           </div>
-    </body>
+        </div>
+    </div>
+</body>
 </html>

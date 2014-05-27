@@ -7,7 +7,7 @@
 <%@include  file="../administracion/valTipoUsuario.jsp" %>
 
 <script type="text/javascript" src="../js/selectAjax.js"></script>
-<script>
+<script type="text/javascript">
     (function(){
         window.onload  = function() { buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda'); };
         document.getElementById("optDrawer").addEventListener("click", displayMenu ,false);
@@ -15,7 +15,7 @@
 </script>
 <div class="unico">
     <h2 id="moduleTitle">Usuarios en el sistema</h2>    
-    <input type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Usuarios"  onkeyup="buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda');" />
+    Buscar usuarios: <input type='text' name='txtNombre' id='txtNombre' class='form-control' onkeyup="buscarUsuario('DisplayUsuarios.jsp', 'txtNombre','busqueda');" />
    <div id="busqueda" class="center-content">
    </div>
    <br />

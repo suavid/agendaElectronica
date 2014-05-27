@@ -14,7 +14,7 @@ body{
   margin: 0 auto;
   width: 850px;
 }
-details{
+.details{
   border: 1px solid #CC0;
   padding: 5px;
   font-family: Arial;
@@ -22,13 +22,15 @@ details{
   width:850px;
   background-color: #EEE;
 }
-summary{
+
+.summary{
   font-weight: bold;
   color: SteelBlue;
   font-size: 12px;
   cursor: pointer;
 }
-details p, details a,details span{
+
+.details p, .details span{
   margin-bottom: 10px;
   font-size: 12px;
   color: #666;

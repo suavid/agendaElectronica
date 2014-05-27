@@ -43,74 +43,67 @@
   { response.sendRedirect(ruta +"/login.jsp?erno=10");
  }  
 %>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Agenda electr&oacute;nica UDB</title>
-        <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<%=ruta%>/css/tutorial.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Agenda electr&oacute;nica UDB</title>
+    <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/tutorial.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
 </head>
 <body>
-        <script>
-    (function(){
-        window.onload  = function() {  
-            document.getElementById("optDrawer").addEventListener("click", displayMenu ,false);
-        };
-    })();
+    <script type="text/javascript">
+        (function(){
+            window.onload  = function() {  
+                document.getElementById("optDrawer").addEventListener("click", displayMenu ,false);
+            };
+        })();
     
-    function displayMenu(){
-        var current = document.getElementById("menu").style.display;
-        switch(current){
-            case 'none':
-                document.getElementById("menu").style.display = "block";
-                break;
-            case 'block':
-                document.getElementById("menu").style.display = "none";
-                break;
-            default:
-                document.getElementById("menu").style.display = "block";
-                break;
+        function displayMenu(){
+            var current = document.getElementById("menu").style.display;
+            switch(current){
+                case 'none':
+                    document.getElementById("menu").style.display = "block";
+                    break;
+                case 'block':
+                    document.getElementById("menu").style.display = "none";
+                    break;
+                default:
+                    document.getElementById("menu").style.display = "block";
+                    break;
+            }
+
         }
-        
-    }
-</script>
-	<div id="contenido">	
-		<div id="header">
-		</div>
-                
+    </script>
+    <div id="contenido">	
+        <div id="header"></div>
             <div id="userName">
-               
-                <img src="<%=ruta%>/img/ic_drawer.png" alt="MENU" id="optDrawer"/>
-             
+                <img src="../img/ic_drawer.png" alt="MENU" id="optDrawer" width="35" height="20"/>
                 <b>Bienvenido:  </b><span class="red"><%= nombreUsuario%></span>
-                <div style="clear:both;"></div>
+                <div class="clear-both"></div>
             </div>
-            
-		<ul id="menu">
-			<li><a class="current" href="<%=ruta%>/index.jsp">Mi cuenta</a></li><!-- Actual Seleccionado -->
-			<li><a href="<%=ruta%>/contactos/MostrarContactos.jsp">Contactos</a></li>
-			<% 
-                        // no mostrar menur usuarios sino es administrador
-                        if(tipoUsuario.equals("Administrador"))
-                        {
-                            %>
-                         <li><a href="<%=ruta%>/usuarios/MostrarUsuarios.jsp">Usuarios</a></li>
-                            <%
-                        }
-                        %>
-                       
-			<li><a href="<%=ruta%>/tuto/tutorial.jsp">Ayuda</a></li>
-                        <li><a href="<%=ruta%>/administracion/CerrarSession.jsp">Cerrar Sesi&oacute;n</a></li>
+            <ul id="menu">
+		<li><a class="current" href="../app/index.jsp">Mi cuenta</a></li><!-- Actual Seleccionado -->
+		<li><a href="../contactos/MostrarContactos.jsp">Contactos</a></li>
+		<% 
+                    // no mostrar menur usuarios sino es administrador
+                    if(tipoUsuario.equals("Administrador"))
+                    {
+                %>
+                <li><a href="../usuarios/MostrarUsuarios.jsp">Usuarios</a></li>
+                <%
+                    }
+                %>   
+                    <li><a href="../tuto/tutorial.jsp">Ayuda</a></li>
+                    <li><a href="../administracion/CerrarSession.jsp">Cerrar Sesi&oacute;n</a></li>
 		</ul>
-                
                 <div id="mainFrame"> 
-            <%
-                  if (request.getParameter("erno") != null)
-                  {
-                      int error = Integer.parseInt(request.getParameter("erno"));
-                      
+                <%
+                if (request.getParameter("erno") != null)
+                {
+                      int error = Integer.parseInt(request.getParameter("erno"));      
                       switch (error)
                       {
                           case 1:

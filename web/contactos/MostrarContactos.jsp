@@ -8,7 +8,7 @@
 <%@include  file="../administracion/valTipoUsuario.jsp" %>
 <script type="text/javascript" src="../js/selectAjax.js"></script>
 
-<script>
+<script type="text/javascript">
     (function(){
         window.onload  = function() { 
             buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda'); 
@@ -19,7 +19,8 @@
 <div class="unico">
 
 <h2 id='moduleTitle'>.:: Mis Contactos::. </h2>    
-<input type='text' name='txtNombre' id='txtNombre' class='form-control' placeholder="Buscar Contactos"  onkeyup="buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda');" />
+Buscar contacto:
+<input type='text' name='txtNombre' id='txtNombre' class='form-control' onkeyup="buscarUsuario('DisplayContactos.jsp', 'txtNombre','busqueda');" />
         <div id="busqueda" class="center-content">
         </div>
         <br />
@@ -27,8 +28,8 @@
 
 </div> 
  
-<div style="clear: both;"></div>
-<script>
+<div class="clear-both"></div>
+<script type="text/javascript">
     function confirmar(url,id){
         if(confirm("Eliminar este contacto?"))
             location.href = url + "?idContacto=" + id;
