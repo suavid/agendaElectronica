@@ -72,12 +72,11 @@
   <div class="details">
         <p class="summary" onclick="ver('siete')">Video Demostrativo</p>
          <div class="contenedorVideo" id="siete">
-        <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/1lwinEfhL78?color2=FBE9EC&amp;version=3">
-            <param name="movie" value="http://www.youtube.com/v/1lwinEfhL78?color2=FBE9EC&amp;version=3" />
+        <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/S8DMDsoPu7I?color2=FBE9EC&amp;version=3">
+            <param name="movie" value="http://www.youtube.com/v/S8DMDsoPu7I?color2=FBE9EC&amp;version=3" />
             <param name="allowFullScreen" value="true" />
             <param name="allowscriptaccess" value="always" />
         </object>
-           
         </div>
     </div>
  </div>
