@@ -11,10 +11,6 @@
     #banner{width:100%; height: auto;}
 } 
 @media (max-width: 700px) {
-    .details img, .details div img{
-        width: 100% !important;
-        height: auto !important;
-    }
     #userName { margin-left: 5px; padding: 10px;}
     #menu, #userName, #menu li {float: none;}
     #header {display:none;}
@@ -24,7 +20,11 @@
     #userName{box-shadow: 1px 1px 3px #939393; margin:0; margin-bottom: 0px; background: linear-gradient(#F3F3F3,#E3E3E3);}
     #menu li { list-style: none; margin: 0; width: 100%; }
 }
-@media (max-width: 450px){  
+@media (max-width: 450px){ 
+     .details img, .details div img{
+        width: 100% !important;
+        height: auto !important;
+    }
    .table-responsive thead,.table-responsive tr,.table-responsive th, .table-responsive tbody, .table-responsive td{ display: block; padding: 0px; border: none !important; }
    .table-responsive table{ display: table; margin: 0px; border: none; }
    .table-responsive thead,.table-responsive th { display: none; }
