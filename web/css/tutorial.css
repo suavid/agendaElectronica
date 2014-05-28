@@ -64,7 +64,7 @@ details summary::-webkit-details-marker {
         display:none;
     }
     
- .contenedorVideo iframe
+ .contenedorVideo object
  {
     height: 100%;
     left:0;

@@ -43,8 +43,7 @@
   { response.sendRedirect(ruta +"/login.jsp?erno=10");
  }  
 %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
-    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -54,6 +53,7 @@
     <link rel="stylesheet" type="text/css" href="/agendaElectronica/css/estilo_responsive.css" media="all" />
 </head>
 <body>
+    <script src="../js/tutorial.js" type="text/javascript" ></script>
     <script type="text/javascript">
         (function(){
             window.onload  = function() {  
@@ -81,7 +81,7 @@
         <div id="header"></div>
             <div id="userName">
                 <img src="../img/ic_drawer.png" alt="MENU" id="optDrawer" width="35" height="20"/>
-                <b>Bienvenido:  </b><span class="red"><%= nombreUsuario%></span>
+                Bienvenido:  <span class="red"><%= nombreUsuario%></span>
                 <div class="clear-both"></div>
             </div>
             <ul id="menu">
